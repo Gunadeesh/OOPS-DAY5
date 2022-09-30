@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantity;
+    double price;
+    double expenses;
+
+
+    cout<<"enter the quantity :";
+    cin >> quantity;
+    cout<<"Enter a price: ";
+    cin >> price;
+	   expenses = quantity * price;
+    if (quantity > 1000) {
+        expenses *= 0.9;
+    }
+
+
+    cout <<"The total expenses are "<<expenses<<endl;
+    return 0;
+}
