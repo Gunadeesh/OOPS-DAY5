@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+char g,s;
+int a;
+cout <<"Enter Martial Status m For Married And u For Unmarried ";
+cin >> s;
+cout<<"\nEnter Gender m For MAle And f For Female";
+cin >> g;
+cout<<"\nEnter Age ";
+cin >> a;
+if(((s=='m'))||((s=='u')&&(g=='m')&&(a>30))||((s=='u')&&(g=='f')&&(a>25)))
+cout<<"\nDriver Is Insured"<<endl;
+else
+cout<<"\nDriver Is Not Insured"<<endl;
+return 0;
+}
+
